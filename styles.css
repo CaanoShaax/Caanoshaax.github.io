@@ -1,9 +1,10 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #87CEEB; /* Light blue sky color */
   margin: 0;
   padding: 0;
+  position: relative; /* Required for positioning clouds and sun */
 }
 
 .container {
@@ -61,4 +62,49 @@ h1 {
 
 .weather-info p {
   margin: 10px 0;
+}
+
+/* Cloud Styles */
+.cloud {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.cloud1 {
+  width: 120px;
+  height: 50px;
+  top: 80px;
+  left: 100px;
+}
+
+.cloud2 {
+  width: 80px;
+  height: 30px;
+  top: 50px;
+  left: 200px;
+}
+
+/* Sun Styles */
+.sun {
+  position: absolute;
+  background-color: #ffdb58; /* Yellow sun color */
+  border-radius: 50%;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: 50px;
+  animation: rotateSun 20s linear infinite; /* Rotate sun animation */
+}
+
+@keyframes rotateSun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
