@@ -107,4 +107,16 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
+  @media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .form-group input[type="text"] {
+    font-size: 14px;
+  }
+
+  .form-group button {
+    font-size: 14px;
+  }
 }
