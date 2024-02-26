@@ -74,14 +74,14 @@ h1 {
 .cloud1 {
   width: 120px;
   height: 50px;
-  top: 80px;
+  top: 20px; /* Adjust top position */
   left: 100px;
 }
 
 .cloud2 {
   width: 80px;
   height: 30px;
-  top: 50px;
+  top: 10px; /* Adjust top position */
   left: 200px;
 }
 
@@ -95,7 +95,7 @@ h1 {
 .sun {
   width: 100px;
   height: 100px;
-  top: 50px;
+  top: 20px; /* Adjust top position */
   right: 50px;
   animation: rotateSun 20s linear infinite; /* Rotate sun animation */
 }
@@ -107,7 +107,10 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
-  @media screen and (max-width: 600px) {
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
   .container {
     padding: 10px;
   }
