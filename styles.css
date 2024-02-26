@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #87CEEB; /* Light blue sky color */
@@ -29,11 +28,12 @@ h1 {
 }
 
 .form-group input[type="text"] {
-  width: 100%;
+  width: calc(100% - 60px); /* Adjusted width */
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  float: left; /* Float left */
 }
 
 .form-group button {
@@ -44,6 +44,7 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  float: right; /* Float right */
 }
 
 /* Weather Info Styles */
@@ -116,10 +117,22 @@ h1 {
   }
 
   .form-group input[type="text"] {
-    font-size: 14px;
+    width: calc(100% - 10px); /* Adjusted width */
   }
 
   .form-group button {
     font-size: 14px;
+  }
+
+  .cloud1 {
+    top: 60px; /* Adjusted top position */
+  }
+
+  .cloud2 {
+    top: 30px; /* Adjusted top position */
+  }
+
+  .sun {
+    top: 40px; /* Adjusted top position */
   }
 }
